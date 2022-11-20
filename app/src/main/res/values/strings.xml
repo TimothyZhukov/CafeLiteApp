@@ -12,4 +12,17 @@
     <string name="sugar">Sugar</string>
     <string name="milk">Milk</string>
     <string name="lemon">Lemon</string>
+    <string name="choose_the_drink_type">Choose the drink type</string>
+    <string name="make_order">Make order</string>
+
+    <array name="types_of_tea">
+        <item>Green</item>
+        <item>Black</item>
+    </array>
+
+    <array name="types_of_coffee">
+        <item>Americano</item>
+        <item>Espresso</item>
+        <item>Latte</item>
+    </array>
 </resources>

@@ -15,6 +15,7 @@
         android:textAlignment="center"
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupDrinks"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
@@ -23,7 +24,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/textViewGreetings">
+        app:layout_constraintBottom_toTopOf="@+id/textViewAdditives"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGreetings">
 
         <RadioButton
             android:id="@+id/radioButtonTea"
@@ -52,7 +54,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@id/radioGroupDrinks" />
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxMilk"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupDrinks" />
 
     <CheckBox
         android:id="@+id/checkBoxSugar"
@@ -60,9 +63,10 @@
         android:layout_height="wrap_content"
         android:text="@string/sugar"
         android:textColor="@android:color/holo_blue_dark"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/checkBoxMilk"
         app:layout_constraintEnd_toStartOf="@id/checkBoxMilk"
-        app:layout_constraintTop_toBottomOf="@id/textViewAdditives" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/checkBoxMilk" />
 
     <CheckBox
         android:id="@+id/checkBoxMilk"
@@ -70,9 +74,11 @@
         android:layout_height="wrap_content"
         android:text="@string/milk"
         android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDrinks"
         app:layout_constraintEnd_toStartOf="@id/checkBoxLemon"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@id/checkBoxSugar"
-        app:layout_constraintTop_toBottomOf="@id/textViewAdditives" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewAdditives" />
 
     <CheckBox
         android:id="@+id/checkBoxLemon"
@@ -80,8 +86,51 @@
         android:layout_height="wrap_content"
         android:text="@string/lemon"
         android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toBottomOf="@id/checkBoxMilk"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/checkBoxMilk"
-        app:layout_constraintTop_toBottomOf="@id/textViewAdditives" />
+        app:layout_constraintTop_toTopOf="@id/checkBoxMilk" />
+
+    <TextView
+        android:id="@+id/textViewDrinks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/choose_the_drink_type"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerTea"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxMilk" />
+
+    <Spinner
+        android:id="@+id/spinnerTea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:entries="@array/types_of_tea"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMakeOrder"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDrinks" />
+
+    <Spinner
+        android:id="@+id/spinnerCoffee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:entries="@array/types_of_coffee"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/buttonMakeOrder"
+        app:layout_constraintTop_toBottomOf="@id/textViewDrinks"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/buttonMakeOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/make_order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTea" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
