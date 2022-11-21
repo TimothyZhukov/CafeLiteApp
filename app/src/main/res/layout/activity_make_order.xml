@@ -33,6 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:text="@string/tea"
+            android:checked="true"
             android:textColor="@android:color/holo_blue_dark" />
 
         <RadioButton
