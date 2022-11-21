@@ -6,8 +6,10 @@
         <entry key="..\:/Users/Timothy/AndroidStudioProjects/CafeLite/app/src/main/res/drawable/ic_coffee.xml" value="0.1915" />
         <entry key="..\:/Users/Timothy/AndroidStudioProjects/CafeLite/app/src/main/res/layout/activity_main.xml" value="0.47962962962962963" />
         <entry key="..\:/Users/Timothy/AndroidStudioProjects/CafeLite/app/src/main/res/layout/activity_make_order.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.32890069933905114" />
-        <entry key="app/src/main/res/layout/activity_make_order.xml" value="0.3620795116498014" />
+        <entry key="..\:/Users/Timothy/AndroidStudioProjects/CafeLiteApp/app/src/main/res/layout/activity_main.xml" value="0.4109848484848485" />
+        <entry key="..\:/Users/Timothy/AndroidStudioProjects/CafeLiteApp/app/src/main/res/layout/activity_make_order.xml" value="0.362876254180602" />
+        <entry key="..\:/Users/Timothy/AndroidStudioProjects/CafeLiteApp/app/src/main/res/layout/activity_order_detail.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_make_order.xml" value="0.2715057373046875" />
       </map>
     </option>
   </component>
